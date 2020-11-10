@@ -12,8 +12,30 @@
 (function() {
     // to get the value of an input: document.getElementById("element-id").value
 
+
+
+
+
+
+
+
+
+
+
     document.getElementById("addition").addEventListener("click", function() {
         // perform an addition
+
+    var number1 =document.getElementById("op-one").value;
+    var number2 =document.getElementById("op-two").value;
+    var result =parseInt(number1)+parseInt(number2);
+
+    console.log(result);
+    
+
+
+
+
+
     });
 
     document.getElementById("substraction").addEventListener("click", function() {
@@ -27,4 +49,24 @@
     document.getElementById("division").addEventListener("click", function() {
         // perform an division
     });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 })();
+
+
+
