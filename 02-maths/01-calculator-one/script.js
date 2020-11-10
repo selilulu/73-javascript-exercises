@@ -30,26 +30,40 @@
     var result =parseInt(number1)+parseInt(number2);
 
     console.log(result);
-    
-
-
-
 
 
     });
 
     document.getElementById("substraction").addEventListener("click", function() {
         // perform an substraction
+
+    var number1 =document.getElementById("op-one").value;
+    var number2 =document.getElementById("op-two").value;
+    var result =parseInt(number1) - parseInt(number2);
+
+    console.log(result);
     });
 
     document.getElementById("multiplication").addEventListener("click", function() {
         // perform an multiplication
+
+        var number1 =document.getElementById("op-one").value;
+        var number2 =document.getElementById("op-two").value;
+        var result =parseInt(number1) *  parseInt(number2);
+
+        console.log(result);
     });
 
     document.getElementById("division").addEventListener("click", function() {
         // perform an division
-    });
 
+        var number1 =document.getElementById("op-one").value;
+        var number2 =document.getElementById("op-two").value;
+        var result =parseInt(number1) / parseInt(number2);
+    
+        console.log(result);
+        
+    });
 
 
 
