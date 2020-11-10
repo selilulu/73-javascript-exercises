@@ -25,9 +25,9 @@
     document.getElementById("addition").addEventListener("click", function() {
         // perform an addition
 
-    var number1 =document.getElementById("op-one").value;
-    var number2 =document.getElementById("op-two").value;
-    var result =parseInt(number1)+parseInt(number2);
+    var number1 =parseInt(document.getElementById("op-one").value);//using parseInt after the var names in () we can reach the same as below in comment
+    var number2 =parseInt(document.getElementById("op-two").value);
+    var result =number1 + number2;//parseInt(number1) - parseInt(number2); can be also used as below
 
     console.log(result);
 
@@ -64,19 +64,6 @@
         console.log(result);
         
     });
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
