@@ -15,7 +15,13 @@
 
     document.getElementById("run").addEventListener("click", function() {
 
-        // your code here
+        // your code here // https://javascript.info/task/factorial
+        function factorial(n) {
+            return (n != 1) ? n * factorial(n - 1) : 1;
+          }
+          
+          alert(factorial(document.getElementById("number").value));
+
 
     });
 
