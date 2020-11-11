@@ -15,7 +15,14 @@
 
     document.getElementById("run").addEventListener("click", function() {
 
-        // your code here
+        // my code works with the run id element not with numbers element ?
+        var points = [2, 4, 14, 10, 90, 23, 16];
+        document.getElementById("run").innerHTML = points;
+        function myFunction() {
+
+        points.sort(function(a, b){return a - b});
+        document.getElementById("run").innerHTML = points;
+        }
 
     });
 
