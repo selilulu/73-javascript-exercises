@@ -14,7 +14,89 @@
 
     const performOperation = operation => {
         // perform the operation
+
+        let number1 = parseInt(document.getElementById('op-one').value);
+        let number2 = parseInt(document.getElementById('op-two').value);
+        let answer; 
+
+       
+
+        switch(operation){
+
+            case ("addition"): 
+                answer = number1 + number2;
+                break;
+
+            case ("substraction"):
+                answer = number1 - number2;
+                break;
+
+            case ("multiplication"):
+                answer = number1 * number2;
+                break;
+
+            case ("division"):
+                answer = number1 / number2;
+                break;
+
+            default: 
+                answer = "Its not an easy one "
+                break;
+        
+            
+
+        }
+
+        alert(answer);
+        
+
+        
     };
+
+  
+
+
+    Array.from(document.querySelectorAll("button.operator")).forEach($btn =>
+        $btn.addEventListener(
+            "click",
+            () => (performOperation($btn.id), false),
+
+           
+
+
+        ),
+    );
+})();
+
+
+   
+/*const performOperation = operation => {
+        // perform the operation 
+        switch (operation){
+                case "addition":
+                    var result = (+ document.getElementById("op-one").value) + (+ document.getElementById("op-two").value);
+                    alert(result);
+                    break;
+                case "substraction":
+                    var result = document.getElementById("op-one").value - document.getElementById("op-two").value;
+                    alert(result);
+                    break;
+                case "multiplication":
+                    var result = document.getElementById("op-one").value * document.getElementById("op-two").value;
+                    alert(result);
+                    break; 
+                default:
+                    var result = document.getElementById("op-one").value / document.getElementById("op-two").value;
+                    alert(result);
+                    break;
+                
+   
+   
+   
+    };
+    
+
+    }
 
     Array.from(document.querySelectorAll("button.operator")).forEach($btn =>
         $btn.addEventListener(
@@ -23,3 +105,4 @@
         ),
     );
 })();
+*/
