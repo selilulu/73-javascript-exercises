@@ -12,10 +12,16 @@
 (function() {
 
     // your code here
-    function myFunction() {
-        document.getElementById("red").style.backgroundcolor = "#ff0000";
-        document.getElementById("green").style.color = "green";
-        document.getElementById("blue").style.color = "blue";
-        document.getElementById("yellow").style.color = "yellow";
-      }
+      document.getElementById("red").addEventListener("click", function() {
+        document.body.style.backgroundColor = 'red';
+      });
+      document.getElementById("green").addEventListener("click", function() {
+        document.body.style.backgroundColor = 'green';
+      });
+      document.getElementById("yellow").addEventListener("click", function() {
+        document.body.style.backgroundColor = 'yellow';
+      });
+      document.getElementById("blue").addEventListener("click", function() {
+        document.body.style.backgroundColor = 'blue';
+      });
 })();
