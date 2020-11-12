@@ -36,7 +36,7 @@
     ];
     document.getElementById("run").addEventListener("click", function() {
                 console.log(fruits[3]);
-        /*document.getElementById("run").innerHTML=fruits[3];*///this shows the 4th fruit in the bottom 
+        /*document.getElementById("run").innerHTML=fruits[3];*///this shows the 4th fruit in the button
     
     
     

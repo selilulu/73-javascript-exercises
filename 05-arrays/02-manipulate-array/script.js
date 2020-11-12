@@ -23,7 +23,16 @@
         "raisin",
         "cerise",
     ];
+        document.getElementById("run").addEventListener("click", function() {
 
-    // your code here
+        fruits[0]="Banana";
+        fruits[9]="Kiwi";
+        
+        
+        document.getElementById("run").innerHTML = fruits;
 
-})();
+    });
+
+
+    
+ })();

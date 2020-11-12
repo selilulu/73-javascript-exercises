@@ -16,16 +16,17 @@
     // your code here
 
      
-    var date = new Date();  
-    var hour = date.getHours();  
-    var minute = date.getMinutes();  
-    var greet ;
     
-    if (hour <= 17  ) {  
-      greet = "Hey";  
-    } else (hour > 18)  
-      greet = "good evening";  
-     
-    document.getElementById("target").innerHTML = greet ;
-    
+    var hour = new Date().getHours(); 
+    var greeting;
+
+    if (hour < 17.5) {
+      greeting = "Hello!";
+    } else {
+      greeting = "Good evening";
+    }
+    document.getElementById("target").innerHTML = greeting ;
+
+
+
 })();
