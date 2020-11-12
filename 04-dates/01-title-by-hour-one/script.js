@@ -8,11 +8,22 @@
 
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
+//here is my link https://stackoverflow.com/questions/7122543/javascript-time-greeting
 
-(function() {
+// to change the content of a tag: document.getElementById("element-id").innerHTML = "new-value"
 
-    // to change the content of a tag: document.getElementById("element-id").innerHTML = "new-value"
+// your code here
+    
+    var hour = new Date().getHours(); 
+    var greeting;
 
-    // your code here
+    if (hour < 18) {
+      greeting = "Hello!";
+    } else {
+      greeting = "Good evening";
+    }
+    document.getElementById("target").innerHTML = greeting ;
 
-})();
+
+
+
