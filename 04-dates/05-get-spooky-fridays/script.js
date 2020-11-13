@@ -9,8 +9,11 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
+
+    document.getElementById("run").addEventListener("click", function () {
+    var d =new Date();
+    let fullDate = today.getDay(friday) + " " + today.getDate(13) + " " + today.getMonth() + " " + today.getFullYear() ; 
+          document.getElementById("year").innerHTML = d 
 
     // your code here
-
-})();
+});
