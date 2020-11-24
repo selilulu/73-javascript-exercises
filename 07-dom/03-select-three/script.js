@@ -10,6 +10,16 @@
 // You will have time to focus on it later.
 
 (function() {
+    const targets=document.querySelectorAll(".target");
+    for (var x=0; x<targets.length; x++){
+     targets[x].innerHTML="owned";
+     }
+
+    // var targets =document.querySelectorAll(".target");
+    // targets.forEach(x=>{
+    //     x.innerHTML="owned";
+    // })
+
 
     // your code here
 
