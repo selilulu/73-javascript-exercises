@@ -15,6 +15,8 @@
      targets[x].innerHTML="owned";
      }
 
+
+                                                          //here is another solution with forEach loop !
     // var targets =document.querySelectorAll(".target");
     // targets.forEach(x=>{
     //     x.innerHTML="owned";

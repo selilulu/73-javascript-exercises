@@ -10,7 +10,18 @@
 // You will have time to focus on it later.
 
 (function() {
+    //useful link : https://www.geeksforgeeks.org/how-to-create-an-image-element-dynamically-using-javascript/
 
-    // your code here
+ let link =document.querySelector("#source").getAttribute("data-image");
+ 
+ let newImage=document.createElement("img");
+
+ newImage.src=link;// link variable gives the value from data-image 
+ document.getElementById("target").appendChild(newImage);
+document.getElementById("source").remove();
+
+
+
+
 
 })();
