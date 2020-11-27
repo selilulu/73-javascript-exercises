@@ -11,6 +11,22 @@
 
 (function() {
 
+    let slider=document.querySelector("#slider");
+    let target=document.querySelector("#target");
+
+    target.innerHTML= slider.value;//here value can be replaced with innerhtml
+
+
+
+    slider.addEventListener("click",function(){
+        target.innerHTML = this.value;//here instead of this slider can be used too
+    })
+
+
+
+
+
+
     // your code here
 
 })();
