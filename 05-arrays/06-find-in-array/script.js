@@ -9,7 +9,6 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
 
     const people = [
         {
@@ -88,7 +87,26 @@
             email: "gkeatche@google.fr",
         },
     ];
+    document.getElementById("run").addEventListener("click", function() {
 
-    // your code here
+    const email= people.find(findJean && findDupont).email;
 
-})();
+    function findJean + findDupont(person){
+
+    return person.firstname==="Jean","Dupont";
+
+    }console.log(email);
+
+    // show the e mail of surname with Dupont below
+
+    const email2= people.find(findDupont).email2;
+
+    function findDupont(person){
+
+    return person.lastname==="Dupont";
+
+    }console.log(email2);
+
+
+
+ });

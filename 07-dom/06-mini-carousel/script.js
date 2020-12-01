@@ -30,10 +30,10 @@ let currentIndex = 0; // doesnt work when its inside of the click function!
    value.src = gallery[currentIndex];
 
 
-if (currentIndex === 4){
-    currentIndex = 0; 
-}else{
-    currentIndex ++;
+  if (currentIndex === 4){
+      currentIndex = 0; 
+  }else {
+      currentIndex ++;
     }
 
 });

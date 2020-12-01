@@ -11,6 +11,26 @@
 
 (function() {
 
+    let one=document.getElementById("part-one")
+    let numberOne=one.getAttribute("data-min", "data-max");
+    console.log(numberOne);
+    let two=document.getElementById("part-two");    
+    let three=document.getElementById("part-three");
+    let four=document.getElementById("part-four");
+    let target=document.querySelector("#target");
+
+    //target.innerHTML=getAttribute();
+
+
+    one.addEventListener("click",function(){
+        target.innerHTML = this.data-min;//here instead of this slider can be used too
+    })
+
+
+
+
+
+
     // your code here
 
 })();

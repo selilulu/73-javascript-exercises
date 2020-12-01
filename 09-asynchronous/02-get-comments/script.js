@@ -11,4 +11,22 @@
 
 (() => {
     // your code here
+    document.getElementById("run").addEventListener("click", function(){
+        windows.lib.getPosts(callbackPost);
+
+        function callbackPost(error,articles){
+            articles.forEach((article) =>{
+                lib.getComments(article.id, callbackComm);
+                
+                function callbackComm(error, comms){
+                    comms=article.comments;
+                    console.log(error,article);
+                
+        
+            }
+    
+        });
+
+      }
+    })
 })();
