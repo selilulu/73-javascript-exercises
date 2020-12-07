@@ -12,13 +12,27 @@
 (() => {
     // your code here
 
-    document.getElementById("run")addEventListener("click", function()
-        fetch("http://localhost:3000/heroes");
-        .then(response )
+    
+ document.getElementById("run").addEventListener("click", function(){
+
+         fetch("http://localhost:3000/heroes")
+            .then(response => {
+                console.log(response);
+                return response.json();
+    })
+
+            .then(json=> {
+                console.log(json);
+                json.forEach(hero=>{
+                    let name=hero.name;
+
+                    document.getElementById("target").innerHTML=name;
+
+                
+            });
 
 
-
-    )}
-
-
+            })
+          
+})
 })();

@@ -11,20 +11,20 @@
 
 
 document.getElementById("run").addEventListener("click", function() {
-    var x = Math.floor(Math.random() * 256);
-    var y = Math.floor(Math.random() * 256);
-    var z = Math.floor(Math.random() * 256);
-    var bgColor = "rgb(" + x + "," + y + "," + z + ")";
+   
+
+   function getRandomColor(){
+    let letters='0123456789ABCDEF';
+    let color='#';
+    for (let i=0; i < 6 ; i++){
+        color=color+letters[Math.floor(Math.random()*16)];
+    }
+    return color;
+    }
+
+   
   
-    document.body.style.background = bgColor;
+    document.body.style.background = getRandomColor();
     
-});
+}
 
-//here is a useful link=https://www.w3resource.com/javascript-exercises/javascript-math-exercise-40.php
-/*document.getElementById("run").addEventListener("click", function()    {
-
-    const backgrnd = Math.floor(Math.random()*16777215).toString(16);
-
-    document.body.style.backgroundColor = "#" + backgrnd;
-
-*/
